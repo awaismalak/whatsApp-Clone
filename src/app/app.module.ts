@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContantComponent } from './contant/contant.component';
+import { ConversationComponent } from './conversation/conversation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
-    ContantComponent
+    ContantComponent,
+    ConversationComponent
   ],
   imports: [
     BrowserModule,

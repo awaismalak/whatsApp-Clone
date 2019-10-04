@@ -1,9 +1,13 @@
+
 #sideBar_container
 {
     display: flex;
     flex-direction: column;
+    border-right: 1px solid #eee;
+    display: flex;
+    display: inline-flex;
     height: 100%;
-    
+   
     width: 32%;
     .header
     {
@@ -120,3 +124,5 @@
     }
 }
 
+
+ 
