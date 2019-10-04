@@ -8,13 +8,15 @@ import { SideBarComponent } from './side-bar/side-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContantComponent } from './contant/contant.component';
 import { ConversationComponent } from './conversation/conversation.component';
+import { SearchsmsComponent } from './searchsms/searchsms.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SideBarComponent,
     ContantComponent,
-    ConversationComponent
+    ConversationComponent,
+    SearchsmsComponent
   ],
   imports: [
     BrowserModule,

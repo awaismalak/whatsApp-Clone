@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-// import { ConversationComponent } from '../app/conversation/conversation.component'
+import { ConversationComponent } from '../app/conversation/conversation.component';
+import{ContantComponent} from "../app/contant/contant.component";
 import { from } from 'rxjs';
 
 
 const routes: Routes = [
-  // {path:"conversation", component:ConversationComponent}
+  {path:'',component:ContantComponent},
+  {path:"conversation", component:ConversationComponent},
+  {path:'conversation/:id', component: ConversationComponent}
 ];
 
 @NgModule({

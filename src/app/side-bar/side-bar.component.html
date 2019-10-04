@@ -3,6 +3,7 @@
         <div class="subHeader">
             <div class="user_image ">
                 <img src="assets/images/images (1).jpeg" class="rounded-circle">
+              
             </div>
             <div class="headerIcon  ">
                     <button type="button"><fa-icon [icon]="faCircleNotch"></fa-icon></button>
@@ -19,143 +20,29 @@
     </div>
 
     <div id="contactsList">
-        <div class="contact_item">
+        <div class="contact_item"
+         *ngFor="let contact of contacts, let i=index"
+         (click)="openConversation(i)"
+         routerLink="conversation/index"
+         style="outline: none;">
             <div class="contact_img">
-                <img src="assets/images/images.jpeg" class="rounded-circle">
+                <img src="assets/images/{{contact.image}}" class="rounded-circle">
             </div>
             <div class="contact_outline">
                 <h6>
-                    Muhammad Atif
+                    {{contact.name}}
                 </h6>
                 <span>
-                    Hello world! Good morning Bro...
+                   {{contact.message}}
                 </span>
                 <div class="time_section">
-                        <span>Sunday</span>
+                        <span>{{contact.lastSms}}</span>
                  </div>
             </div>
            
         </div>
     <!-- contacts items lists items hereeeee -->
-    <div class="contact_item">
-            <div class="contact_img">
-                <img src="assets/images/images.jpeg" class="rounded-circle">
-            </div>
-            <div class="contact_outline">
-                <h6>
-                    Muhammad Atif
-                </h6>
-                <span>
-                    Hello world! Good morning Bro...
-                </span>
-                <div class="time_section">
-                        <span>Sunday</span>
-                    </div>
-            </div>
-            
-        </div>
-        <div class="contact_item">
-                <div class="contact_img">
-                    <img src="assets/images/images.jpeg" class="rounded-circle">
-                </div>
-                <div class="contact_outline">
-                    <h6>
-                        Muhammad Atif
-                    </h6>
-                    <span>
-                        Hello world! Good morning Bro...
-                    </span>
-                    <div class="time_section">
-                            <span>Sunday</span>
-                        </div>
-                </div>
-                
-            </div>
-    <div class="contact_item">
-        <div class="contact_img">
-            <img src="assets/images/images.jpeg" class="rounded-circle">
-        </div>
-        <div class="contact_outline">
-            <h6>
-                Muhammad Atif
-            </h6>
-            <span>
-                Hello world! Good morning Bro...
-            </span>
-            <div class="time_section">
-                    <span>Sunday</span>
-                </div>
-        </div>
-        
-    </div>
-    <div class="contact_item">
-            <div class="contact_img">
-                <img src="assets/images/images.jpeg" class="rounded-circle">
-            </div>
-            <div class="contact_outline">
-                <h6>
-                    Muhammad Atif
-                </h6>
-                <span>
-                    Hello world! Good morning Bro...
-                </span>
-                <div class="time_section">
-                        <span>Sunday</span>
-                    </div>
-            </div>
-            
-        </div>
-        <div class="contact_item">
-                <div class="contact_img">
-                    <img src="assets/images/images.jpeg" class="rounded-circle">
-                </div>
-                <div class="contact_outline">
-                    <h6>
-                        Muhammad Atif
-                    </h6>
-                    <span>
-                        Hello world! Good morning Bro...
-                    </span>
-                    <div class="time_section">
-                            <span>Sunday</span>
-                        </div>
-                </div>
-                
-            </div>
-            <div class="contact_item">
-                    <div class="contact_img">
-                        <img src="assets/images/images.jpeg" class="rounded-circle">
-                    </div>
-                    <div class="contact_outline">
-                        <h6>
-                            Muhammad Atif
-                        </h6>
-                        <span>
-                            Hello world! Good morning Bro...
-                        </span>
-                        <div class="time_section">
-                                <span>Sunday</span>
-                            </div>
-                    </div>
-                    
-                </div>
-                <div class="contact_item">
-                        <div class="contact_img">
-                            <img src="assets/images/images.jpeg" class="rounded-circle">
-                        </div>
-                        <div class="contact_outline">
-                            <h6>
-                                Muhammad Atif
-                            </h6>
-                            <span>
-                                Hello world! Good morning Bro...
-                            </span>
-                            <div class="time_section">
-                                    <span>Sunday</span>
-                                </div>
-                        </div>
-                        
-                    </div>
+   
     <!-- contacts items lists items hereeeee -->
 </div>
 
