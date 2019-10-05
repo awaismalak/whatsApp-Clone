@@ -1,0 +1,68 @@
+#searchSms_container
+{
+    width: 30%;
+    height: 100%;
+    float: right;
+
+    .header
+    {
+        // flex-basis: 150px;
+        
+        .subHeader
+        {
+            height: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: #eee;
+            padding-left: 10px;
+            font-size: 18px;
+            border-left: 1px solid #bec1c3;
+
+            button
+            {
+                border: 0px solid;
+                outline: none;
+                color: gray;
+                background-color: #eee;
+                margin-right: 30px;
+                 font-size: 20px;
+
+            }
+        }
+        .searchBox
+        {
+                    background-color: #f8f8f8;
+                    height: 55px;
+                    width: 100%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    input
+                    {
+                        width: 90%;
+                        height: 45px;
+                        border-radius: 25px;
+                        outline: none;
+                        border: 0px solid;
+                        margin: auto;
+                        padding-left: 50px;
+                        
+                        font-size: 14px;
+                      
+            
+                    }
+                    .search_icon
+                {
+                    position: absolute;
+                    color: #bec1c3;
+                    left: 40px;
+        
+                    fa-icon{
+                        font-size: 14px;
+                    }
+                }
+        }
+    }
+}

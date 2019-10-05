@@ -1,4 +1,5 @@
-<div id="conversaction_mainContainer">
+<div class="conversaction_mainContainer"
+[ngClass]="{'searchContainerVisible': isVisiblesearchcomponent== true} ">
     <div class="header">
         <div class="contact_item">
             <div class="contact_img">
@@ -16,7 +17,7 @@
 
         </div>
         <div class="headerIcon  ">
-            <button type="button">
+            <button type="button" (click)="isVisible();">
                 <fa-icon [icon]="search_icon"></fa-icon>
             </button>
             <button type="button">
@@ -49,4 +50,6 @@
                </button>
             </div>
         </div>
+       
 </div>
+<app-searchsms (onClose)="close()" *ngIf="isVisiblesearchcomponent == true"></app-searchsms>

@@ -13,6 +13,7 @@ import { ContactsService } from '../shared/services/contacts.service';
   styleUrls: ['./conversation.component.scss']
 })
 export class ConversationComponent implements OnInit {
+
   attach =faPaperclip;
   nav_icon=faEllipsisV;
   search_icon=faSearch;
@@ -20,6 +21,7 @@ export class ConversationComponent implements OnInit {
   mice =faMicrophone;
   contacts=[];
   index;
+  isVisiblesearchcomponent = false;
   
   constructor(
     private route:ActivatedRoute,
@@ -43,5 +45,12 @@ export class ConversationComponent implements OnInit {
   ngOnInit() {
    
   }
-
+  isVisible(){
+  let value = this.isVisiblesearchcomponent = true;
+ 
+  }
+  close() {
+    let value = this.isVisiblesearchcomponent = false;
+ 
+   }
 }
