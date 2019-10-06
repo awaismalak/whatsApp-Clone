@@ -9,7 +9,7 @@ import {faTimes } from '@fortawesome/free-solid-svg-icons';
 })
 export class ContactInfoComponent implements OnInit {
   isVisiblesearchcomponent =true;
-  @Output('onClose') onClose: EventEmitter<any> = new EventEmitter();
+  @Output('onClose') onClose  = new EventEmitter();
   faTimes=faTimes;
   constructor() { }
 
