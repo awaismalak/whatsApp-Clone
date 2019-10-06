@@ -22,6 +22,7 @@ export class ConversationComponent implements OnInit {
   contacts = [];
   index;
   isVisiblesearchcomponent = false;
+  isContactInfoVisible =false;
 
   constructor(
     private route: ActivatedRoute,
@@ -51,5 +52,14 @@ export class ConversationComponent implements OnInit {
   close() {
     this.isVisiblesearchcomponent = false;
 
+  }
+  openContactInfo()
+  {
+    this.isContactInfoVisible =true;
+  }
+ 
+  closeContactInfo()
+  {
+    this.isContactInfoVisible =false;
   }
 }
