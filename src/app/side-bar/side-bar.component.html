@@ -3,28 +3,31 @@
         <div class="subHeader">
             <div class="user_image ">
                 <img src="assets/images/images (1).jpeg" class="rounded-circle">
-              
+
             </div>
             <div class="headerIcon  ">
-                    <button type="button"><fa-icon [icon]="faCircleNotch"></fa-icon></button>
-                    <button type="button"> <fa-icon [icon]="faComment"></fa-icon></button> 
-                     <button type="button"> <fa-icon [icon]="faEllipsisV"></fa-icon></button>
+                <button type="button">
+                    <fa-icon [icon]="faCircleNotch"></fa-icon>
+                </button>
+                <button title="newchat" type="button" (click)="openNewChat()">
+                    <fa-icon [icon]="faComment"></fa-icon>
+                </button>
+                <button type="button">
+                    <fa-icon [icon]="faEllipsisV"></fa-icon>
+                </button>
             </div>
         </div>
         <div class="searchBox">
-                <input type="text" class="searchInput" placeholder="Search or start new chat">
-                <div class="search_icon">
-                     <fa-icon [icon]="faSearch"></fa-icon> 
-                </div>
-         </div>
+            <input type="text" class="searchInput" placeholder="Search or start new chat">
+            <div class="search_icon">
+                <fa-icon [icon]="faSearch"></fa-icon>
+            </div>
+        </div>
     </div>
 
     <div id="contactsList">
-        <div class="contact_item"
-         *ngFor="let contact of contacts, let i=index"
-         (click)="openConversation(i)"
-         routerLink="conversation/index"
-         style="outline: none;">
+        <div class="contact_item" *ngFor="let contact of contacts, let i=index" (click)="openConversation(i)"
+            routerLink="conversation/index" style="outline: none;">
             <div class="contact_img">
                 <img src="assets/images/{{contact.image}}" class="rounded-circle">
             </div>
@@ -33,22 +36,24 @@
                     {{contact.name}}
                 </h6>
                 <span>
-                   {{contact.message}}
+                    {{contact.message}}
                 </span>
                 <div class="time_section">
-                        <span>{{contact.lastSms}}</span>
-                 </div>
+                    <span>{{contact.lastSms}}</span>
+                </div>
             </div>
-           
+
         </div>
-    <!-- contacts items lists items hereeeee -->
-   
-    <!-- contacts items lists items hereeeee -->
+
+    </div>
+
+
+
+
+
+
 </div>
-
-
-    
-</div>
+<app-new-chat (onClose)="hideNewChat()" [ngClass]="{'isVisible': newchat == true}"></app-new-chat>
 
 
 
@@ -64,6 +69,3 @@
 
 
 
-
-
- 

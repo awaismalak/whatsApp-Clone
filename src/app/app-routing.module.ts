@@ -10,6 +10,8 @@ const routes: Routes = [
   {path:'',component:ContantComponent},
   {path:"conversation", component:ConversationComponent},
   {path:'conversation/:id', component: ConversationComponent},
+  
+
 ];
 
 @NgModule({

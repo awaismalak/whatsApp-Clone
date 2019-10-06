@@ -1,54 +1,48 @@
-
-#sideBar_container
+#newChat
 {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #eee;
-    display: flex;
-    display: inline-flex;
-    height: 100%;
-    float: left;
-    position: relative;
-  
-   
-    width: 30%;
+    background-color:#fff;
+
+    
+    
     .header
     {
-        // flex-basis: 150px;
-        
+        .subheader_cover
+        {
+            height: 120px;
+            background-color: #00bfa5;
+            display: flex;
+
+
+
         .subHeader
         {
+           display: flex;
+           width: 100%;
             height: 60px;
-            display: flex;
             flex-wrap: wrap;
-            display: flex;
-            justify-content: space-between;
             align-items: center;
-            background-color: #eee;
+            color: white;
             padding-left: 10px;
+            font-size: 18px;
+            border-left: 1px solid #bec1c3;
+            align-self: flex-end;
 
-            .user_image
+            button
             {
-                img{
-                            width: 40px;
-                            height: 40px; 
-                    }
-            }
-            .headerIcon
-            {
-
-                button
-                {
-                    color: #80868a;
-                    background-color: #eee;
-                    // background-color: #ffffff;
-                    border: 0px solid;
-                    outline: none;
-                    margin: 10px;
-                }
+                border: 0px solid;
+                outline: none;
+                color: white;
+                background-color: #00bfa5;
+                margin-right: 30px;
+                 font-size: 20px;
 
             }
         }
+    }
         .searchBox
         {
                     background-color: #f8f8f8;
@@ -57,6 +51,7 @@
                     text-align: center;
                     display: flex;
                     align-items: center;
+                    position: relative;
                     input
                     {
                         width: 90%;
@@ -66,15 +61,16 @@
                         border: 0px solid;
                         margin: auto;
                         padding-left: 50px;
-                        position: relative;
+                        
                         font-size: 14px;
+                      
             
                     }
                     .search_icon
                 {
                     position: absolute;
-                    left: 40px;
                     color: #bec1c3;
+                    left: 40px;
         
                     fa-icon{
                         font-size: 14px;
@@ -82,9 +78,12 @@
                 }
         }
     }
+
     #contactsList{
     
         overflow: auto;
+        height: 100%;
+        
 
         .contact_item{
             display: flex;
@@ -94,7 +93,7 @@
             border-bottom: 1px solid #eee;
             border-top: 1px solid #eee;
         
-            .contact_img
+            .contact_img 
             {
         img
         {
@@ -103,6 +102,19 @@
         }
 
             }
+             .usersIcon
+             {
+                 border:1px solid;
+                 width: 50px;
+                 height: 50px;
+                 background-color: #3c8c7e;
+                 border-radius: 50%;
+                 color: white;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+
+             }
             .contact_outline
         {
             flex-grow: 1;
@@ -129,21 +141,12 @@
            background-color: #eee;
        }
         }
+        .chatOutline
+        {
+            color: #00bfa5;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
     }
 }
 
-
- app-new-chat{
-     left:-30%;
-     position: absolute;
-    width: 30%;
-    display: block;
-    height: 100%;
-    transition: all 0.4s ease-in-out;
-
-     &.isVisible
-     {
-         left:0% !important;
-     
-     }
- }

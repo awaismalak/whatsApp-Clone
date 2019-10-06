@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContantComponent } from './contant/contant.component';
 import { ConversationComponent } from './conversation/conversation.component';
 import { SearchsmsComponent } from './searchsms/searchsms.component';
+import { NewChatComponent } from './new-chat/new-chat.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchsmsComponent } from './searchsms/searchsms.component';
     SideBarComponent,
     ContantComponent,
     ConversationComponent,
-    SearchsmsComponent
+    SearchsmsComponent,
+    NewChatComponent
   ],
   imports: [
     BrowserModule,
