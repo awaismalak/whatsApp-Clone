@@ -1,0 +1,70 @@
+#searchSms_container
+{
+    width: 30%;
+    height: 100%;
+    float: right;
+    border: 1px solid;
+
+    .header
+    {
+        // flex-basis: 150px;
+        
+        .subHeader
+        {
+            height: 60px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: #eee;
+            padding-left: 10px;
+            font-size: 18px;
+            border-left: 1px solid #bec1c3;
+
+            button
+            {
+                border: 0px solid;
+                outline: none;
+                color: gray;
+                background-color: #eee;
+                margin-right: 30px;
+                 font-size: 20px;
+
+            }
+        }
+      
+    }
+    .contactInfo
+    {
+        
+       border-bottom: 1px solid #eee;
+       padding-bottom: 20px;
+       
+        .contactInfoImage
+        {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        
+            img
+            {
+            width: 200px;
+            height: 200px; 
+            border-radius: 100%;
+ 
+            }
+        }
+        .nameTitle
+        {
+            padding-left: 30px;
+
+            h6
+            {
+                margin: 0px;
+                padding: 0px;
+                font-size: 26px;
+                font-weight: normal;
+            }
+         }
+    }
+}
