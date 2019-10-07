@@ -1,12 +1,12 @@
 <div class="conversaction_mainContainer"
-[ngClass]="{'searchContainerVisible': isVisiblesearchcomponent== true} ">
+[ngClass]="{'searchContainerVisible': isVisiblesearchcomponent== true || isContactInfoVisible==true } ">
     <div class="header">
         <div class="contact_item"
-         (click)="openContactInfo()" style="border:1px solid;">
+         (click)="openContactInfo()">
             <div class="contact_img">
                 <img src="assets/images/{{contacts[index].image }}" class="rounded-circle">
             </div>
-            <div class="contact_outline">
+            <div class="contact_outline" title="{{contacts[index].name }}">
                 <h6>
                     {{contacts[index].name }}
                 </h6>
@@ -18,17 +18,22 @@
 
         </div>
         <div class="headerIcon  ">
-            <button type="button" (click)="isVisible();">
+            <button type="button" title="Search..."
+             (click)="isVisible();">
                 <fa-icon [icon]="search_icon"></fa-icon>
             </button>
-            <button type="button">
+            <button type="button" title="Attach">
                 <fa-icon [icon]="attach"></fa-icon>
             </button>
-            <button type="button">
+            <button type="button" title="Menu">
                 <fa-icon [icon]="nav_icon"></fa-icon>
             </button>
         </div>
+        
     </div>
+    <div class="chatDiv">  
+            <app-user-chat></app-user-chat>
+  </div>
     <div class="footer">
             <div class=" col_1 iconBox">
                 <button type="button">

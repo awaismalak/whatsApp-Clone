@@ -23,6 +23,7 @@ export class ConversationComponent implements OnInit {
   index;
   isVisiblesearchcomponent = false;
   isContactInfoVisible =false;
+  
 
   constructor(
     private route: ActivatedRoute,

@@ -4,7 +4,9 @@
     float: right;
     height: 100%;
     background-image: url(../../assets/images/chat-background-whatsapp-2.jpg);
-    display: grid;
+    display: flex;
+    flex-direction: column;
+
    
     .header
     {
@@ -70,6 +72,18 @@
     
                 }
     }
+    .chatDiv
+    {
+        flex-grow: 1;
+        display: flex;
+
+        app-user-chat
+        {
+            align-self: flex-end;
+            width: 100%;
+
+        }
+    }
     .footer
     {
         height: 60px;
@@ -77,6 +91,7 @@
         border-left: 1px solid lightgray;
         align-self: flex-end;
         display: flex;
+        width: 100%;
 
       .col_2
         {

@@ -11,6 +11,7 @@ import { ConversationComponent } from './conversation/conversation.component';
 import { SearchsmsComponent } from './searchsms/searchsms.component';
 import { NewChatComponent } from './new-chat/new-chat.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
+import { UserChatComponent } from './user-chat/user-chat.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactInfoComponent } from './contact-info/contact-info.component';
     ConversationComponent,
     SearchsmsComponent,
     NewChatComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    UserChatComponent
   ],
   imports: [
     BrowserModule,
