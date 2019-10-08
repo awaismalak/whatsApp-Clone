@@ -12,6 +12,8 @@ import { SearchsmsComponent } from './searchsms/searchsms.component';
 import { NewChatComponent } from './new-chat/new-chat.component';
 import { ContactInfoComponent } from './contact-info/contact-info.component';
 import { UserChatComponent } from './user-chat/user-chat.component';
+import {FormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { UserChatComponent } from './user-chat/user-chat.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
     
   ],
   providers: [],

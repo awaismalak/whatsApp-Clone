@@ -6,6 +6,7 @@ import { faSmile } from '@fortawesome/free-solid-svg-icons';
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons';
 import { ActivatedRoute } from '@angular/router';
 import { ContactsService } from '../shared/services/contacts.service';
+import { Contact } from '../shared/services/contacts';
 
 @Component({
   selector: 'app-conversation',
@@ -19,11 +20,11 @@ export class ConversationComponent implements OnInit {
   search_icon = faSearch;
   smile = faSmile;
   mice = faMicrophone;
-  contacts = [];
+  contacts: Contact[] = [];
   index;
   isVisiblesearchcomponent = false;
   isContactInfoVisible =false;
-  
+  awais="";
 
   constructor(
     private route: ActivatedRoute,

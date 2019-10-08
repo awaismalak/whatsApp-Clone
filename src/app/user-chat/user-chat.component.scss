@@ -1,68 +1,72 @@
-.chatRecord
-{
-    padding: 10px;
-    padding-left: 10px;
-    max-width: 60%;
-    font-size: 14px;
-    position: relative;
+.cover {
 
-   
-}
-
-#coverReciveSms
-{
     width: 100%;
     margin-bottom: 3px;
-
-   
-
-   
-    .reciveSms
-    {
-
-    background-color: #ffffff;
-    margin-left: 10%;
-    border-radius: 0px 10px 10px 10px;
-
-    .taykonLeft
-    {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 10;
-        left: -20px;
-        top:0;
-        background-image:url(../../assets/images/download.png);
-    }
-
-    }
-}
-
-#coverSendSms
-{
+    display: flex;
+    margin-top: 3px;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 15px;
-    margin-bottom: 3px;
-   
-    .sendSms
-    {
-   
-    background-color: #dcf8c6;
-    margin-right: 10%;
-    border-radius: 10px 0px 10px 10px;
 
+    .chatRecord {
+        padding: 10px;
+        padding-left: 10px;
+        max-width: 60%;
+        font-size: 14px;
+        position: relative;
+        margin-bottom: 5px;
 
-    .taykonRight
-    {
-        width: 15px;
-        height: 15px;
-        position: absolute;
-        right: -10px;
-        top: 0;
-        background-image:url(../../assets/images/rightangl.png);
+        .triangle {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+        }
     }
+}
+
+
+
+.coverReciveSms {
+
+    justify-content: flex-start;
+
+
+
+    .chatRecord {
+
+        background-color: #ffffff;
+        margin-left: 10%;
+        border-radius: 0px 10px 10px 10px;
+
+
+
+        .taykonLeft {
+
+            left: 10;
+            left: -20px;
+
+            background-image: url(../../assets/images/download.png);
+        }
+
+    }
+}
+
+.coverSendSms {
+
+    justify-content: flex-end;
+
+
+    .chatRecord {
+
+        background-color: #dcf8c6;
+        margin-right: 10%;
+        border-radius: 10px 0px 10px 10px;
+
+
+        .taykonRight {
+            right: -10px;
+            background-image: url(../../assets/images/rightangl.png);
+        }
 
     }
 }

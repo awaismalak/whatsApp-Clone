@@ -13,7 +13,7 @@ export class ContactsService {
         'lastSms': '12/31/2019',
         'image': 'one.jpg',
         conversation: [
-          { id: 1, message: 'abc', received: true, sent: false, time: '10 minutes ago' }
+          { id: 1, message: '1', received: true, sent: false, time: '10 minutes ago' },  { id: 1, message: '2', received: true, sent: false, time: '10 minutes ago' },  { id: 1, message: '3', received: false, sent: true, time: '10 minutes ago' },  { id: 1, message: '4', received: true, sent: false, time: '10 minutes ago' },  { id: 1, message: '5', received: true, sent: false, time: '10 minutes ago' },  { id: 1, message: '6', received: false, sent: true, time: '10 minutes ago' },  { id: 1, message: '7', received: true, sent: false, time: '10 minutes ago' },  { id: 1, message: 'Pakistan is beautiful country.', received: true, sent: false, time: '10 minutes ago' },  { id: 1, message: '8', received: true, sent: false, time: '10 minutes ago' },  { id: 1, message: "Hello World...!", received: true, sent: false, time: '10 minutes ago' },
         ]
       }, {
         'name': 'dddd asdfasf',
@@ -21,7 +21,7 @@ export class ContactsService {
         'lastSms': '12/31/2019',
         'image': 'images.jpeg'
         , conversation: [
-          { id: 1, message: 'abc', received: true, sent: false, time: '10 minutes ago' }
+          { id: 1, message: '9', received: true, sent: false, time: '10 minutes ago' }
         ]
       },
       {
@@ -30,7 +30,7 @@ export class ContactsService {
         'lastSms': '12/31/2019',
         'image': 'images (1).jpeg'
         , conversation: [
-          { id: 1, message: 'abc', received: true, sent: false, time: '10 minutes ago' }
+          { id: 1, message: '10', received: true, sent: false, time: '10 minutes ago' }
         ]
       },
       {
@@ -39,7 +39,7 @@ export class ContactsService {
         'lastSms': '12/31/2019',
         'image': 'images (1).jpeg'
         , conversation: [
-          { id: 1, message: 'abc', received: true, sent: false, time: '10 minutes ago' }
+          { id: 1, message: '11', received: true, sent: false, time: '10 minutes ago' }
         ]
       },
       {
@@ -48,7 +48,7 @@ export class ContactsService {
         'lastSms': '12/31/2019',
         'image': 'images (1).jpeg'
         , conversation: [
-          { id: 1, message: 'abc', received: true, sent: false, time: '10 minutes ago' }
+          { id: 1, message: '12', received: true, sent: false, time: '10 minutes ago' }
         ]
       },
       {

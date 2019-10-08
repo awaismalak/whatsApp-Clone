@@ -1,16 +1,19 @@
-<div id="coverReciveSms">
-   <div class="reciveSms chatRecord">
-    Hello World...! 
-    Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
-    <div class="taykonLeft"> </div>
+<div class="cover" 
+[ngClass]="{'coverReciveSms':meraPegham.received, 'coverSendSms':meraPegham.sent}"
+
+*ngFor="let meraPegham of contact.conversation ; let i=index" >
+  
+  
+    <div class=" chatRecord">
+    {{meraPegham.message}}
+
+    <br>
+  <span *ngIf="i>0">  {{contact.conversation[i-1].message}}</span>
+
+    <div *ngIf="shouldShowTriangle(meraPegham, i)" class="triangle"
+    [ngClass]="{'taykonLeft':meraPegham.received, 'taykonRight':meraPegham.sent}"
+    > </div>
     
    
    </div>
 </div>
-<div id="coverSendSms">
-    <div class="sendSms chatRecord">
-     Hello World...! 
-     <div class="taykonRight"> </div>
-
-    </div>
- </div>
